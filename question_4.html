@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Create three variables
+        let name = "Isra";
+        let age = 27;
+        let traveledCountries = ["USA", "UK", "France", "Germany", "Italy"];
+
+        // Check whether each variable is an array
+        console.log(Array.isArray(name));
+        console.log(Array.isArray(age));
+        console.log(Array.isArray(traveledCountries));
+
+
+        // Arrow function that accepts an array
+        const showArray = (array) => {
+            console.log(array);
+        };
+
+        // Call the arrow function with the array
+        showArray(traveledCountries);
+
+
+        // Another arrow function that accepts one value
+        const showValue = (value) => {
+            console.log(value);
+        };
+
+        // Call the function
+        showValue(name);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

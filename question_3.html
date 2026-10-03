@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Practice</title>
+
+    <script>
+        // Create two arrays
+        let array1 = ["mango", "banana", "apple", "grapes", "peach"];
+        let array2 = ["kiwi", "orange", "papaya", "pear", "plum"];
+
+        // 1. Combine two arrays using concat()
+        let array3 = array1.concat(array2);
+        console.log("Combined array:", array3);
+
+
+        // 2. Copy a portion using slice()
+        let slicedArray = array1.slice(1, 4);
+        console.log("Sliced array:", slicedArray);
+
+
+        // 3. Remove an element using splice()
+        let removedElement = array1.splice(0, 1);
+        console.log("Removed element:", removedElement);
+        console.log("After removing:", array1);
+
+
+        // 4. Add an element at a specific position using splice()
+        array1.splice(2, 0, "watermelon");
+        console.log("After adding watermelon:", array1);
+
+
+        // 5. Delete an element using delete
+        delete array1[3];
+
+        // 6. Display array and length after delete
+        console.log("After delete:", array1);
+        console.log("Array length:", array1.length);
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
