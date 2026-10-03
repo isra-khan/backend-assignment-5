@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List Manager</title>
+</head>
+
+<body>
+
+<script>
+
+    // Starting product list
+    let productNames = [
+        "Laptop",
+        "Mobile",
+        "Tablet",
+        "Smartwatch",
+        "Headphones"
+    ];
+
+    // Display number of products
+    console.log("Number of products:", productNames.length);
+
+    // Display first product using at()
+    console.log("First product:", productNames.at(0));
+
+    // Display last product using at()
+    console.log("Last product:", productNames.at(-1));
+
+
+    // Add a product at the end
+    productNames.push("Camera");
+    console.log("After push:", productNames);
+
+
+    // Add a product at the beginning
+    productNames.unshift("Printer");
+    console.log("After unshift:", productNames);
+
+
+    // Remove the last product
+    productNames.pop();
+    console.log("After pop:", productNames);
+
+
+    // Remove the first product
+    productNames.shift();
+    console.log("After shift:", productNames);
+
+
+    // Create second product array
+    let productNames2 = [
+        "Monitor",
+        "Keyboard",
+        "Mouse"
+    ];
+
+
+    // Combine two arrays using concat()
+    let combinedProducts = productNames.concat(productNames2);
+    console.log("Combined products:", combinedProducts);
+
+
+    // Create a smaller list using slice()
+    let smallList = productNames.slice(0, 2);
+    console.log("Small list:", smallList);
+
+
+    // Remove one product using splice()
+    let removedProduct = productNames.splice(0, 1);
+    console.log("Removed product:", removedProduct);
+    console.log("After splice:", productNames);
+
+
+    // Join products into a string
+    console.log("Final product list:", productNames.join(" "));
+
+
+    // Arrow function to display the final array
+    const showArray = (array) => {
+        console.log("Final array:", array);
+    };
+
+    showArray(productNames);
+
+
+    // Check whether productNames is an array
+    console.log("Is productNames an array?", Array.isArray(productNames));
+
+</script>
+
+</body>
+</html>
